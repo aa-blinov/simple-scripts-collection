@@ -53,7 +53,7 @@ def setup_logging(log_file: str | None = None, verbose: bool = False) -> None:
 
     handlers = [logging.StreamHandler()]
     if log_file:
-        handlers.append(logging.FileHandler(log_file))
+        handlers.append(logging.FileHandler(log_file))  # type: ignore
 
     logging.basicConfig(level=log_level, format=log_format, handlers=handlers)
 
