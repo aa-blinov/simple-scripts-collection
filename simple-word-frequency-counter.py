@@ -142,8 +142,8 @@ def try_encodings(file_path: str) -> Tuple[str, str]:
         with open(file_path, "r", encoding="latin-1", errors="replace") as f:
             content = f.read()
         return content, "latin-1 (fallback)"
-    except Exception as e:
-        return "", f"Error: {e}"
+    except Exception as exc:
+        return "", f"Error: {exc}"
 
 
 def count_word_frequency(file_paths: list[str]) -> dict[str, int]:
@@ -405,6 +405,6 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\nOperation cancelled by user.")
         sys.exit(0)
-    except Exception as e:
-        print(f"Unexpected error: {e}", file=sys.stderr)
+    except Exception as exc:
+        print(f"Unexpected error: {exc}", file=sys.stderr)
         sys.exit(1)
