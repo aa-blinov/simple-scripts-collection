@@ -8,7 +8,7 @@ from typing import List, Optional
 def find_files(
     directory: str,
     name: str | None = None,
-    allowed_extensions: List[str] |None = None,
+    allowed_extensions: List[str] | None = None,
 ) -> List[str]:
     """Search for files in the specified directory and its subdirectories, optionally filtering by name and allowed extensions."""
     found_files: List[str] = []
