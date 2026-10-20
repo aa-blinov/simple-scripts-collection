@@ -1,20 +1,18 @@
-<!-- house-style: template — fill this file in, then delete this line -->
-
 # Screenshots
 
-Images referenced from the README and the documents.
+There are no screenshots in this repository, and the folder holds this note
+instead.
 
-<!--
-  Put the files here and reference them from the README:
+Every script in the collection writes to a terminal, and a terminal is the
+reader's own: the typeface, the width, the background and the colour
+handling are the reader's settings rather than this repository's. A picture
+of one script's output would show the reader's terminal and the reader's
+data, not a design decision made here.
 
-  ```markdown
-  ![The main window](docs/screenshots/main.png)
-  ```
+Nothing in the repository captures an image either. There is no script that
+runs the collection and records it, no fixture and no image in the history.
 
-  Images are referenced by relative path, so they resolve both on GitHub and
-  in a local checkout. The house-style checker verifies that every image
-  reference points at a file that exists, so a renamed screenshot cannot
-  quietly break the README.
-
-  Delete this file once the project has images of its own.
--->
+What a screenshot would have to show is written down in
+[../../DESIGN.md](../../DESIGN.md): the eight ANSI colours and the two
+attributes, the boxed ASCII table, the ASCII tree, the dry-run listing and
+the result on standard output.
